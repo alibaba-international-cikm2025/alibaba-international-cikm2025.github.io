@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="KDD Cup 2022 Workshop: The primary objective of this competition is to build new ranking strategies and, simultaneously, identify interesting categories of results (i.e., substitutes) that can be used to improve the customer experience when searching for products." />
+    <meta name="author" content="Nurendra Choudhary" />
+    <title>KDD Cup 2023 Workshop: Multilingual Session Recommendation Challenge</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <nav id="mainNav">
+        <div class="nav-inner">
+            <a class="brand" href="#top">
+                <img src="assets/logo.png" alt="Logo" height="30">
+                Analyticup Workshop
+            </a>
+            <ul class="nav-links">
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#reports">Technical Reports</a></li>
+                <li><a href="#organizers">Organizers</a></li>
+                <li><a href="#instructions">Report Instructions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>CIKM 2025 Alibaba International Competition Workshop</h1>
+            <p class="lead">Multilingual E-commerce Product Search Competition: "Multilingual Query-Category and Query-Item Relevance"</p>
+            <p>Nov 14, 2025 • Seoul, South Korea</p>
+        </div>
+    </header>
+
+    <!-- Introduction -->
+    <section id="intro" class="section container">
+        <h2>Introduction</h2>
+        <p>
+            This workshop highlights the results of the Alibaba International CIKM 2025 Analyticup competition on multilingual search relevance.
+            The competition aims to advance multilingual search technologies by leveraging LLMs to improve search accuracy in noisy, real-world e-commerce environments. More specifically, two tasks are being explored:
+        </p>
+        <ol>
+            <li><strong>Multilingual Query-Category Relevance Task:</strong> Determine the relevance between a user's search query and a specific product category.</li>
+            <li><strong>Multilingual Query-Item Relevance Task:</strong> Assess the alignment between a user's multilingual search query and a specific product listing.</li>
+        </ol>
+        <p class="after-list">
+            Participating teams built models on our curated dataset and submitted technical reports describing their approaches and results.
+        </p>
+    </section>
+
+    <!-- Agenda -->
+    <section id="agenda" class="section light">
+        <div class="container">
+            <h2>Agenda</h2>
+            <p class="center">November 14, 2025 — COEX, Seoul, South Korea</p>
+
+            <div class="agenda-list">
+                <div class="agenda-item">
+                    <time>13:00 — 13:15</time>
+                    <div>
+                        <strong>Welcome & Overview</strong>
+                        <div class="muted">Opening remarks by Alibaba International and presentation of the competition</div>
+                    </div>
+                </div>
+
+                <div class="agenda-item">
+                    <time>13:15 — 13:30</time>
+                    <div>
+                        <strong>Award ceremony</strong>
+                    </div>
+                </div>
+
+                <div class="agenda-item">
+                    <time>13:30 — 15:00</time>
+                    <div>
+                        <strong>Oral Presentations — Top Teams</strong>
+                        <div class="muted">Six 15-minute talks + Q&A</div>
+
+                        <!-- Sublist of oral presentations (links inactive for now) -->
+                        <ul class="talks">
+                            <li>
+                                <span class="talk-time">13:30 — 13:45</span>
+                                <a class="talk-link disabled" href="presentations/team-aurora.html" aria-disabled="true">Team Aurora — Cross-lingual Token Alignment for Category Relevance (Hana Park, Leo Martins, Zhi Wei)</a>
+                            </li>
+                            <li>
+                                <span class="talk-time">13:45 — 14:00</span>
+                                <a class="talk-link disabled" href="presentations/team-zenith.html" aria-disabled="true">Team Zenith — Retrieval-Augmented Matching for Noisy E-commerce Queries (Priya Nair, Marco Silva, Yuki Tanaka)</a>
+                            </li>
+                            <li>
+                                <span class="talk-time">14:00 — 14:15</span>
+                                <a class="talk-link disabled" href="presentations/team-orion.html" aria-disabled="true">Team Orion — Contrastive Training with Locale-aware Negatives (Amir Rahman, Sofia Duarte, Chen Liang)</a>
+                            </li>
+                            <li>
+                                <span class="talk-time">14:15 — 14:30</span>
+                                <a class="talk-link disabled" href="presentations/team-nimbus.html" aria-disabled="true">Team Nimbus — Two-stage Reranking with Lightweight Cross-Encoders (Elena Petrova, David Wong, Farah Ali)</a>
+                            </li>
+                            <li>
+                                <span class="talk-time">14:30 — 14:45</span>
+                                <a class="talk-link disabled" href="presentations/team-lyra.html" aria-disabled="true">Team Lyra — Robust Query Normalization and Multilingual Embeddings (Luis Fernandez, Minji Choi, Akash Mehta)</a>
+                            </li>
+                            <li>
+                                <span class="talk-time">14:45 — 15:00</span>
+                                <a class="talk-link disabled" href="presentations/team-solstice.html" aria-disabled="true">Team Solstice — Hybrid Title Generation for Cold-start Items (Sara Gomez, Hao Li, Victor Chao)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="agenda-item">
+                    <time>15:00 — 16:00</time>
+                    <div>
+                        <strong>Poster Session & Demos</strong>
+                        <div class="muted">Poster area and short demos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical reports -->
+    <section id="reports" class="section">
+        <div class="container">
+            <h2>Technical Reports from Competing Teams</h2>
+            <p class="muted">Below are the submitted technical reports. Click a title to view the PDF.</p>
+
+            <div class="reports-grid">
+                <article class="report-card">
+                    <h3><a href="https://alibaba-international.org/reports/dragonai_multilocale.pdf" target="_blank">DragonAI: Locale-aware Session Encoder with Contrastive Pretraining</a></h3>
+                    <div class="meta">Team members: Mei Lin (lead), Xue Wang, Arjun Patel</div>
+                    <p class="small">Abstract: A session encoder that fuses locale embeddings with behavioral co-visitation graphs and contrastive objectives to improve cross-locale ranking.</p>
+                </article>
+
+                <article class="report-card">
+                    <h3><a href="https://alibaba-international.org/reports/silkroad_xfer.pdf" target="_blank">SilkRoad: Transfer Learning for Low-Resource Locale Recommendation</a></h3>
+                    <div class="meta">Team members: Jing Zhao, Rohit Kumar, Elena Petrova</div>
+                    <p class="small">Abstract: A transfer-learning pipeline adapting high-resource models to underrepresented locales via meta-learning and label smoothing.</p>
+                </article>
+
+                <article class="report-card">
+                    <h3><a href="https://alibaba-international.org/reports/redpanda_titlegen.pdf" target="_blank">RedPanda: Hybrid Title Generation with Retrieval-Augmented Generation</a></h3>
+                    <div class="meta">Team members: Hao Li, Sara Gomez, Lucas Tan</div>
+                    <p class="small">Abstract: Combines retrieval of candidate product tokens and a lightweight seq2seq model to create succinct titles for cold-start items.</p>
+                </article>
+
+                <article class="report-card">
+                    <h3><a href="https://alibaba-international.org/reports/eastbridge_stack.pdf" target="_blank">EastBridge: Two-stage Retrieve-and-Rerank with Multilingual Embeddings</a></h3>
+                    <div class="meta">Team members: Victor Chao, Mei Chen</div>
+                    <p class="small">Abstract: A scalable two-stage pipeline that uses approximate nearest-neighbor retrieval and a cross-lingual reranker.</p>
+                </article>
+
+                <article class="report-card">
+                    <h3><a href="https://alibaba-international.org/reports/cloudnine_ensembling.pdf" target="_blank">CloudNine: Ensembling and Robust Post-processing for Leaderboard Stability</a></h3>
+                    <div class="meta">Team members: Ananya Rao, Michael Stein, Yifan Zhou</div>
+                    <p class="small">Abstract: A practical study on ensembles and deterministic post-processing to reduce evaluation variance across locales.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers -->
+    <section id="organizers" class="section light">
+        <div class="container">
+            <h2>Organizers</h2>
+            <p class="muted">Workshop chairs and organizing committee</p>
+
+            <div class="organizers-grid">
+                <figure class="organizer">
+                    <img src="assets/organizer_chen.jpg" alt="Dr. Chen Wu">
+                    <figcaption>
+                        <strong>Dr. Chen Wu</strong><br><span class="muted">Workshop Chair — Alibaba Research</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="organizer">
+                    <img src="assets/organizer_li.jpg" alt="Dr. Li Zhang">
+                    <figcaption>
+                        <strong>Dr. Li Zhang</strong><br><span class="muted">Co-Chair — Alibaba Analytics</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="organizer">
+                    <img src="assets/organizer_singh.jpg" alt="Dr. Priya Singh">
+                    <figcaption>
+                        <strong>Dr. Priya Singh</strong><br><span class="muted">Program Chair — CIKM Liaison</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="organizer">
+                    <img src="assets/organizer_kim.jpg" alt="Mr. Jae Kim">
+                    <figcaption>
+                        <strong>Jae Kim</strong><br><span class="muted">Competition Lead — Alibaba International</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="organizer">
+                    <img src="assets/organizer_garcia.jpg" alt="Ms. Ana Garcia">
+                    <figcaption>
+                        <strong>Ana Garcia</strong><br><span class="muted">Events Coordinator</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Report writing instructions -->
+    <section id="instructions" class="section">
+        <div class="container">
+            <h2>Instructions for Writing Technical Reports</h2>
+
+            <ol class="instructions">
+                <li>
+                    Format: Submit a PDF using the ACM SIGCONF two-column template. Recommended templates:
+                    <ul>
+                        <li><a href="https://www.acm.org/publications/proceedings-template" target="_blank">ACM proceedings template</a></li>
+                        <li>You may also use the CIKM 2025 workshop-specific template if provided in the competition repository.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Length:
+                    <ul>
+                        <li>Standard submissions (1–2 tasks): up to 4 pages (including figures, excluding references).</li>
+                        <li>Comprehensive submissions (3 tasks): up to 6 pages (excluding references).</li>
+                        <li>References and an optional reproducibility appendix (max 1 page) are allowed beyond these limits — keep the appendix focused on code, data splits, and hyperparameters.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Authorship & Blindness:
+                    <ul>
+                        <li>Submissions are <strong>single-blind</strong> (author names and affiliations should be included).</li>
+                        <li>If you are reusing a model/codebase, cite it clearly and describe additional contributions.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Content to include:
+                    <ul>
+                        <li>Abstract and short introduction clarifying the task(s) addressed.</li>
+                        <li>Data processing and splits used (train/val/test).</li>
+                        <li>Model architecture and training details (hyperparameters, compute resources).</li>
+                        <li>Evaluation metrics and results (with ablation and error analysis).</li>
+                        <li>Limitations and ethical considerations (privacy, bias, etc.).</li>
+                        <li>Link to code and checkpoints (strongly encouraged for reproducibility).</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Submission process:
+                    <ul>
+                        <li>Upload a single PDF file to the submission page (link to be announced on the official competition portal).</li>
+                        <li>Make sure the PDF includes contact email for the corresponding author.</li>
+                        <li>Winners and top-N leaderboard teams will be invited to present (in-person or virtually).</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container contact">
+            <h2>Contact</h2>
+            <p>For questions, please reach out via the official competition portal.</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Analyticup Workshop</p>
+        </div>
+    </footer>
+</body>
+</html>
